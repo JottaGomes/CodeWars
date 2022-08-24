@@ -1,0 +1,21 @@
+function moveZeros(arr) {
+    let secondArray = [];
+    let arrayZero = [];
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i]; 
+        
+        if (element !== 0){
+            secondArray.push(element)
+        }
+        if (element === 0){
+            arrayZero.push(element);
+        }
+    }
+
+    for (let j = 0; j < arrayZero.length; j++) {
+        const element1 = arrayZero[j];
+        secondArray.push(element1)
+    }
+    console.log(secondArray)
+    return secondArray;
+  }
